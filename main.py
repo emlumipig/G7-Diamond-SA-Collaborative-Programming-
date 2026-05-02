@@ -17,3 +17,24 @@ def adjectival_grade(grade):
     else:
         return "Did not meet Expectations"
     
+# User input
+TQ1 = float(input("Enter TQ1: "))
+TQ2 = float(input("Enter TQ2: "))
+TQ3 = float(input("Enter TQ3: "))
+TQ4 = float(input("Enter TQ4: "))
+
+# Call Member 1 function
+Q1, Q2, Q3, Q4 = compute_grades(TQ1, TQ2, TQ3, TQ4)
+
+# Final grade (Q4 is final output)
+final_grade = Q4
+
+# Output results
+print("\n--- RESULTS ---")
+print(f"Q1: {Q1:.2f}")
+print(f"Q2: {Q2:.2f}")
+print(f"Q3: {Q3:.2f}")
+print(f"Q4: {Q4:.2f}")
+
+print("\nFinal Grade:", f"{final_grade:.2f}")
+print("Adjectival:", adjectival_equivalent(final_grade))
