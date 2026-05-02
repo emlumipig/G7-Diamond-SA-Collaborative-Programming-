@@ -6,16 +6,28 @@ def compute_grades(TQ1, TQ2, TQ3, TQ4):
     return Q1, Q2, Q3, Q4
     
 def adjectival_grade(grade):
-    if grade >= 90:
-        return "Outstanding"
-    elif grade >= 85:
-        return "Very Satisfactory"
-    elif grade >= 80:
+    if 1.00 <= grade <= 1.24:
+        return "Excellent"
+    elif 1.25 <= grade <= 1.49:
+        return "Very Good"
+    elif 1.50 <= grade <= 1.74:
+        return "Very Good"
+    elif 1.75 <= grade <= 1.99:
+        return "Good"
+    elif 2.00 <= grade <= 2.24:
+        return "Good"
+    elif 2.25 <= grade <= 2.49:
         return "Satisfactory"
-    elif grade >= 75:
-        return "Fairly Satisfactory"
+    elif 2.50 <= grade <= 2.74:
+        return "Satisfactory"
+    elif 2.75 <= grade <= 2.99:
+        return "Fair"
+    elif 3.00 <= grade <= 3.99:
+        return "Fair"
+    elif 4.00 <= grade <= 4.99:
+        return "Failed on Condition"
     else:
-        return "Did not meet Expectations"
+        return "Failed"
     
 # User input
 TQ1 = float(input("Enter TQ1: "))
