@@ -37,4 +37,4 @@ print(f"Q3: {Q3:.2f}")
 print(f"Q4: {Q4:.2f}")
 
 print("\nFinal Grade:", f"{final_grade:.2f}")
-print("Adjectival:", adjectival_equivalent(final_grade))
+print("Adjectival:", adjectival_grade(final_grade))
